@@ -68,6 +68,7 @@ fetch('https://cheryl97.stck.me/api/r/101020/posts/229068')
                 <StackLayout
                   ~mainContent
                   class="mx-1 bg-secondary rounded-2xl py-3 my-1"
+                  @tap="$navigateTo(Details, { props: { id: item.id } })" 
                   ignoreTouchAnimation="true"
                 >
                   <Label
